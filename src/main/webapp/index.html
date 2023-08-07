@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    const value = fetch("http://localhost:8080/front_end_code/myFisrtServerlet").then(res => {
+        res.blob()
+    }).then(res => {
+        console.log(res);
+    })
+</script>
+</html>
