@@ -3,13 +3,8 @@ import java.io.IOException;
 
 public class GoTo extends GenericServlet {
     @Override
-    public void init(ServletConfig servletConfig) throws ServletException {
+    public void init() {
         System.out.println("goto被创建了！");
-    }
-
-    @Override
-    public ServletConfig getServletConfig() {
-        return null;
     }
 
     @Override
@@ -18,12 +13,7 @@ public class GoTo extends GenericServlet {
     }
 
     @Override
-    public String getServletInfo() {
-        return null;
-    }
-
-    @Override
     public void destroy() {
-        System.out.println("goto被销毁了");
+        System.out.println("goto is destroy");
     }
 }
