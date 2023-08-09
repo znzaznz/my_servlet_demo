@@ -5,12 +5,31 @@
     <title>Title</title>
 </head>
 <body>
+<h1>get请求测试</h1>
+<form action="/httpServletGET" method="get">
+    <div>
+        <span>输入用户名</span>
+        <input type="text" name="username"/>
+    </div>
+    <div>
+        <span>输入密码</span>
+        <input type="password" name="password"/>
+    </div>
+    <button type="submit">提交</button>
+</form>
+<h1>post请求测试</h1>
+<form action="/httpServletPOST" method="post">
+    <div>
+        <span>输入用户名</span>
+        <input type="text" name="username"/>
+    </div>
+    <div>
+        <span>输入密码</span>
+        <input type="password" name="password"/>
+    </div>
+    <button type="submit">提交</button>
+</form>
 </body>
 <script>
-    const value = fetch("http://localhost:8080/front_end_code/myFisrtServerlet").then(res => {
-        res.blob()
-    }).then(res => {
-        console.log(res);
-    })
 </script>
 </html>

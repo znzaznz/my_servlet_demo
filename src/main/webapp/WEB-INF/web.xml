@@ -23,6 +23,27 @@
         <url-pattern>/myFisrtServerlet</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>httpServletGET</servlet-name>
+        <servlet-class>HttpServletGET</servlet-class>
+        <load-on-startup>2</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>httpServletGET</servlet-name>
+        <url-pattern>/httpServletGET</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>httpServletPOST</servlet-name>
+        <servlet-class>HttpServletPOST</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>httpServletPOST</servlet-name>
+        <url-pattern>/httpServletPOST</url-pattern>
+    </servlet-mapping>
+
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>
     </welcome-file-list>
